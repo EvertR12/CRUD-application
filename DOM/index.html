@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+
+</head>
+<body>
+  <section class="container">
+    <div class="row add-form">
+      <form id="accounts-form" class="box" method="post">
+
+        <h1>Add accounts</h1>
+        
+        <input type="text" name="Id" class="Id" placeholder="Account Id">
+        <input type="text" name="name-of-account" placeholder="name of account">
+        <input type="email" name="email" placeholder="Email Address">
+        <input type="text" name="username" placeholder="Username">
+		    <input type="password" name="password" placeholder="Password">
+		
+        <div id="add-account-buttons">
+            <input id="add-button" type="submit"  value="Add" class="btn">
+            <input type="reset"  value="reset" value="clear" class="btn">
+		    </div>
+		
+        <div id="update-account-buttons" class="d-none" >
+            <input id="update-button" type="submit"  value="Update" >
+            <input id="cancel-button" type="button"  value="Cancel" >
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <div class="container-fluid">
+      <div class="row card-around" id="account-card-container">
+    </div>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+
+    <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/low.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script>
+    <script src="./assets/code/code.js"></script>
+</body>
+</html>
